@@ -143,12 +143,8 @@
     <!-- Navbar -->
     <nav class="relative z-50 w-full h-[80px] lg:h-[100px] flex items-center justify-between px-6 lg:px-[6%] border-b border-slate-100 bg-white/80 backdrop-blur-md animate-reveal sticky top-0">
         <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-teal-50 text-teal-600 rounded flex items-center justify-center">
-                <span class="iconify w-6 h-6" data-icon="solar:health-linear"></span>
-            </div>
-            <span class="text-xl font-bold tracking-tight text-slate-900">
-                OXITRON
-            </span>
+            <img src="https://czdblxcxyqebrcvngvkt.supabase.co/storage/v1/object/public/orchestra/logooxitron.svg" alt="Oxitron Logo" class="h-10 lg:h-12">
+            <span class="text-2xl font-bold tracking-tight text-slate-900">OXITRON</span>
         </div>
         <div class="hidden md:flex text-sm font-medium text-slate-500 gap-x-8 items-center">
             <a class="hover:text-teal-600 transition-colors" href="#quem-somos">Quem Somos</a>
@@ -211,15 +207,11 @@
                 <!-- Glow behind video -->
                 <div class="absolute inset-0 bg-gradient-to-tr from-teal-400/10 to-sky-400/10 rounded-3xl blur-[60px] scale-110 -z-10"></div>
                 
-                <div class="w-full aspect-video bg-white rounded-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.12)] border border-slate-200/60 overflow-hidden group cursor-pointer transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.18)] flex flex-col relative">
-                    <div class="flex-1 media-placeholder flex flex-col items-center justify-center gap-3 relative border-none bg-slate-50/50">
-                        <div class="absolute inset-0 bg-slate-900/5 group-hover:bg-slate-900/0 transition-colors duration-500 z-10"></div>
-                        
-                        <div class="w-16 h-16 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-teal-600 shadow-lg group-hover:scale-110 group-hover:bg-teal-600 group-hover:text-white transition-all duration-500 z-20 border border-slate-100">
-                            <span class="iconify w-7 h-7 ml-0.5" data-icon="solar:play-bold"></span>
-                        </div>
-                        <span class="text-center px-6 leading-relaxed z-20 opacity-50 mt-2 group-hover:opacity-100 transition-opacity font-medium tracking-widest text-slate-400 group-hover:text-teal-700 uppercase text-[10px]">Vídeo Institucional</span>
-                    </div>
+                <div class="w-full aspect-video bg-black rounded-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.12)] border border-slate-200/60 overflow-hidden group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_25px_60px_-12px_rgba(0,0,0,0.18)] flex flex-col relative z-20">
+                    <video class="w-full h-full object-cover" controls playsinline>
+                        <source src="https://czdblxcxyqebrcvngvkt.supabase.co/storage/v1/object/public/orchestra/Oxitron_Institucional.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
                 </div>
             </div>
 
@@ -241,9 +233,13 @@
                     <p class="text-base text-slate-500 leading-relaxed mb-6">
                         Atuamos no desenvolvimento, implantação, operação e suporte técnico especializado de usinas hospitalares PSA, oferecendo uma solução completa para hospitais públicos, privados, clínicas e redes hospitalares.
                     </p>
-                    <p class="text-base text-slate-500 font-medium leading-relaxed">
+                    <p class="text-base text-slate-500 font-medium leading-relaxed mb-8">
                         Nosso compromisso é assegurar que cada instituição tenha acesso contínuo a um dos insumos mais importantes para a assistência à vida.
                     </p>
+                    <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200/60 aspect-[4/3] w-full relative">
+                        <img src="./assets/hospital_infrastructure.png" alt="Infraestrutura Hospitalar" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                    </div>
                 </div>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 scroll-reveal delay-200">
@@ -530,6 +526,11 @@
                         A tecnologia PSA (Pressure Swing Adsorption) permite gerar oxigênio medicinal diretamente na unidade hospitalar através da separação do oxigênio presente no ar atmosférico.
                     </p>
                     
+                    <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200/60 aspect-[16/9] w-full mb-8 relative">
+                        <img src="./assets/psa_oxygen_plant.png" alt="Usina de Oxigênio PSA" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                    </div>
+
                     <h4 class="text-sm font-bold text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-2 mb-6">Benefícios Imediatos</h4>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="flex items-center gap-3 text-sm font-medium text-slate-700">
@@ -877,12 +878,10 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 lg:col-span-2">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-8 h-8 bg-teal-900 text-teal-400 rounded flex items-center justify-center">
-                            <span class="iconify w-5 h-5" data-icon="solar:health-linear"></span>
+                        <div class="bg-white/90 p-2 rounded-lg flex items-center gap-2">
+                            <img src="https://czdblxcxyqebrcvngvkt.supabase.co/storage/v1/object/public/orchestra/logooxitron.svg" alt="Oxitron Logo" class="h-10">
+                            <span class="text-xl font-bold tracking-tight text-teal-900">OXITRON</span>
                         </div>
-                        <span class="text-xl font-bold tracking-tight text-white">
-                            OXITRON
-                        </span>
                     </div>
                     <p class="text-sm max-w-md leading-relaxed mb-6">
                         Soluções Hospitalares em Oxigênio Medicinal.<br/>
@@ -910,22 +909,25 @@
                 
                 <div>
                     <h4 class="text-white font-semibold mb-6">Contato</h4>
-                    <ul class="space-y-4 text-sm">
+                    <ul class="space-y-5 text-sm">
                         <li class="flex items-start gap-3">
-                            <span class="iconify w-5 h-5 text-slate-500 shrink-0" data-icon="solar:phone-linear"></span>
-                            <span>[Inserir Telefone]</span>
+                            <span class="iconify w-5 h-5 text-slate-500 shrink-0 mt-0.5" data-icon="bxl:whatsapp"></span>
+                            <div class="flex flex-col">
+                                <a href="https://wa.me/5511969801175" class="hover:text-white transition-colors" target="_blank">11 96980-1175</a>
+                                <span class="text-slate-500 text-xs mt-1">Davi - Diretor Comercial</span>
+                            </div>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="iconify w-5 h-5 text-slate-500 shrink-0" data-icon="bxl:whatsapp"></span>
-                            <span>[Inserir WhatsApp]</span>
+                            <span class="iconify w-5 h-5 text-slate-500 shrink-0 mt-0.5" data-icon="solar:letter-linear"></span>
+                            <a href="mailto:atendimento@oxitron.com.br" class="hover:text-white transition-colors break-all">atendimento@oxitron.com.br</a>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="iconify w-5 h-5 text-slate-500 shrink-0" data-icon="solar:letter-linear"></span>
-                            <span>[Inserir E-mail]</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="iconify w-5 h-5 text-slate-500 shrink-0" data-icon="solar:map-point-linear"></span>
-                            <span>[Inserir Endereço]</span>
+                            <span class="iconify w-5 h-5 text-slate-500 shrink-0 mt-0.5" data-icon="solar:map-point-linear"></span>
+                            <div class="flex flex-col gap-1 text-slate-400">
+                                <span class="text-white font-medium">Oxitron Comercio de Gases LTDA</span>
+                                <span>CNPJ: 46.416.750/0001-40</span>
+                                <span class="mt-2">Avenida Thomas Edison, 752<br/>Barra Funda<br/>São Paulo, SP<br/>01140-001</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
