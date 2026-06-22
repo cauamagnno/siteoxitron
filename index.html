@@ -698,11 +698,65 @@
                         <span class="px-4 py-2 border border-slate-200 rounded text-sm font-medium text-slate-600 bg-slate-50">Consumo hospitalar</span>
                     </div>
                 </div>
-                
-                <div class="w-full h-[400px] lg:h-[500px] border border-slate-200 bg-slate-50 rounded-sm overflow-hidden scroll-reveal delay-200 relative">
-                    <div class="absolute inset-0 media-placeholder flex-col gap-4">
-                        <span class="iconify w-12 h-12 text-slate-300" data-icon="solar:pie-chart-2-linear"></span>
-                        <span>[ Infográfico de Dimensionamento ]</span>
+                <div class="w-full h-[400px] lg:h-[500px] bg-slate-900 rounded-sm overflow-hidden scroll-reveal delay-200 relative flex items-center justify-center p-6 border border-slate-800 shadow-2xl">
+                    <!-- Fundo Técnico / Grid -->
+                    <div class="absolute inset-0 opacity-[0.15]">
+                        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+                    </div>
+                    
+                    <div class="relative w-full max-w-lg flex flex-col md:flex-row items-center justify-between gap-8 z-10">
+                        <!-- Demanda Hospitalar -->
+                        <div class="flex flex-col gap-4 w-full md:w-2/5">
+                            <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 p-4 rounded-lg flex items-center gap-4 hover:border-teal-500/50 transition-colors duration-300">
+                                <div class="w-10 h-10 rounded bg-slate-900 flex items-center justify-center text-teal-400">
+                                    <span class="iconify w-6 h-6" data-icon="solar:bed-linear"></span>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold mb-1">Enfermaria</div>
+                                    <div class="text-sm text-white font-medium">Vol. Leitos</div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 p-4 rounded-lg flex items-center gap-4 hover:border-sky-500/50 transition-colors duration-300">
+                                <div class="w-10 h-10 rounded bg-slate-900 flex items-center justify-center text-sky-400">
+                                    <span class="iconify w-6 h-6" data-icon="solar:heart-pulse-linear"></span>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold mb-1">UTI</div>
+                                    <div class="text-sm text-white font-medium">Alta Demanda</div>
+                                </div>
+                            </div>
+
+                            <div class="bg-slate-800/80 backdrop-blur-sm border border-slate-700/50 p-4 rounded-lg flex items-center gap-4 hover:border-indigo-500/50 transition-colors duration-300">
+                                <div class="w-10 h-10 rounded bg-slate-900 flex items-center justify-center text-indigo-400">
+                                    <span class="iconify w-6 h-6" data-icon="solar:medical-kit-linear"></span>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold mb-1">C. Cirúrgico</div>
+                                    <div class="text-sm text-white font-medium">Fluxo Crítico</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Conexão Visual -->
+                        <div class="hidden md:flex items-center justify-center w-1/5 relative">
+                            <div class="w-full h-0.5 bg-slate-700 relative overflow-hidden">
+                                <div class="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-transparent to-teal-400 animate-pulse"></div>
+                            </div>
+                            <span class="absolute iconify w-6 h-6 text-slate-600 bg-slate-900" data-icon="solar:alt-arrow-right-linear"></span>
+                        </div>
+
+                        <!-- Usina -->
+                        <div class="flex flex-col items-center justify-center w-full md:w-2/5 mt-4 md:mt-0">
+                            <div class="w-48 h-48 rounded-full border-[6px] border-slate-800 bg-slate-800/50 flex flex-col items-center justify-center relative shadow-[0_0_40px_rgba(45,212,191,0.1)] group">
+                                <div class="absolute inset-0 rounded-full border border-teal-500/20 group-hover:border-teal-500/60 transition-colors duration-500 animate-[spin_10s_linear_infinite]"></div>
+                                <div class="absolute inset-2 rounded-full border border-sky-500/20 group-hover:border-sky-500/60 transition-colors duration-500 animate-[spin_10s_linear_infinite_reverse]"></div>
+                                
+                                <span class="iconify w-12 h-12 text-teal-400 mb-3" data-icon="solar:settings-bold-duotone"></span>
+                                <span class="text-white font-bold text-xl tracking-tight text-center leading-none mb-2">USINA<br>PSA</span>
+                                <span class="text-teal-400 text-[10px] font-mono bg-teal-400/10 px-2 py-1 rounded uppercase tracking-widest">Sob Medida</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
